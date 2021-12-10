@@ -8,28 +8,33 @@
         <h1>Simple   Interest   Calculator</h1>
         <center>
             <br/><br/>
-            <div>Amount <input type="number"  id="principal">  <br/><br/></div>
-            <div>Intrest Rate <input type="range" id="rate" name="rate" min="0" max="20" step="0.5" oninput="showVal(this.value)">
-            <span id="value" value=0></span><br/><br/></div>
-            <div>No. of Years 
-            <select name="selection" id="years">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select><br/><br/></div>
-            <button onclick="compute()">Compute Intrest</button><br/><br/>
-            <span id="amount"></span><br/><br/>
-            <span id="rate2"></span><br/><br/>
-            <span id="result"></span><br/><br/>
-            <span id="year"></span><br/><br/>
+            <div>
+                Amount <input type="number"  id="principal">  <br/><br/>
+                Intrest Rate <input type="range" id="rate" name="rate" min="0" max="20" step="0.50" oninput="showVal(this.value)">
+                <span id="value" value=0></span><br/><br/>
+                No. of Years 
+                <select name="selection" id="years">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select><br/><br/>
+                <button onclick="compute()">Compute Intrest</button><br/><br/>
+            </div>
+            <div>
+            <span id="amount"></span><mark><span id="amount2"></mark></span><br/><br/>
+            <span id="rate2"></span><mark><span id="rate3"></mark></span><br/><br/>
+            <span id="result"></span><mark><span id="result2"></mark></span><br/><br/>
+            <span id="year"></span><mark><span id="year2"></mark></span><br/><br/>
+            </div>
         </center>
         <p>&copy Everyone Can Get Rich</p>
     </body>
 </html>
+
