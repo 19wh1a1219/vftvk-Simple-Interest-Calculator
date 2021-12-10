@@ -1,6 +1,5 @@
 function compute()
 {
-    let z = 5;
     let p = document.getElementById("principal").value;
     let q = document.getElementById("rate").value;
     let r = document.getElementById("years").value;
