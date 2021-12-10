@@ -1,8 +1,7 @@
 function compute()
 {
-    let z = 5;
     let p = document.getElementById("principal").value;
-    if(p == 0)
+    if(p <= 0)
     {
         alert("Enter a Positive Number");
     }
