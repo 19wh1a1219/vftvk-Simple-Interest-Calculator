@@ -4,6 +4,7 @@ function compute()
     if(p <= 0)
     {
         alert("Enter a Positive Number");
+        document.getElementById("principal").focus();
         return;
     }
     let q = document.getElementById("rate").value;
