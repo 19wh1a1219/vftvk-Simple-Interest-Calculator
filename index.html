@@ -10,10 +10,10 @@
         <center>
             <br/><br/>
             <div>
-                Amount <input type="number"  id="principal">  <br/><br/>
-                Intrest Rate <input type="range" id="rate" name="rate" min="1" max="20" step="0.50" oninput="showVal(this.value)">
-                <span id="value" value=0></span><br/><br/>
-                No. of Years 
+                <h3>Amount <input type="number"  id="principal"></h3>
+                <h3>Intrest Rate <input type="range" id="rate" name="rate" min="1" max="20" step="0.50" oninput="showVal(this.value)">
+                <span id="value" value=0></span><br/></h3>
+                <h3>No. of Years 
                 <select name="selection" id="years">
                     <option>1</option>
                     <option>2</option>
@@ -25,8 +25,8 @@
                     <option>8</option>
                     <option>9</option>
                     <option>10</option>
-                </select><br/><br/>
-                <button onclick="compute()">Compute Intrest</button><br/><br/>
+                </select></h3><br/>
+                <button onclick="compute()">Compute Intrest</button><br/>
             </div>
             <div>
             <span id="amount"></span><mark><span id="amount2"></mark></span><br/><br/>
@@ -35,7 +35,41 @@
             <span id="year"></span><mark><span id="year2"></mark></span><br/><br/>
             </div>
         </center>
-        <p>&copy Everyone Can Get Rich</p>
+        <h3>&copy Everyone Can Get Rich</h3>
     </body>
 </html>
+
+
+
+
+<!--<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            function compute()
+            {
+                var p = document.getElementById("principal").value;
+                var q = document.getElementById("rate").value;
+                //document.getElementById("rate").innerHTML(q);
+                var r = document.getElementById("years").value;
+                var intrest = ((p*q)/100)*r;
+                console.log(p+intrest);
+                //document.getElementById("result").innerHTML(intrest);
+            }
+        </script>
+    </head>
+        <body>
+        <h1>Simple Interest Calculator</h1>
+        <center>
+        Amount <input type="number"  id="principal">  <br/><br/>
+        Intrest Rate <input type="range" id="rate" name="rate" min="0" max="10">  
+        <label id="value" value=0></label><br/><br/>
+        No. of Years <input type="number"  id="years">  <br/><br/>
+        Interest : <label id="result" value=0></label><br><br/>
+        <button onclick="compute()">Compute</button>
+        </center>
+    </body>
+</html>-->
+
+
 
