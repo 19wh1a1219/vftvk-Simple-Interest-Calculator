@@ -1,5 +1,10 @@
-body {background-color:rgb(250, 249, 248);}
-h1{color:rgb(102, 98, 98);}
+body {
+    background-image: url('imgs4.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+h1{color:rgb(53, 50, 50);}
 input[type=number]{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
