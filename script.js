@@ -1,5 +1,6 @@
 function compute()
 {
+    let z = 5;
     let p = document.getElementById("principal").value;
     if(p <= 0)
     {
@@ -10,10 +11,14 @@ function compute()
     let q = document.getElementById("rate").value;
     let r = document.getElementById("years").value;
     let intrest = ((p*q*r)/100);
-    document.getElementById("amount").innerHTML = "If you deposit " + p + ",";
-    document.getElementById("rate2").innerHTML = "at an intrest rate of " + q + "%.";
-    document.getElementById("result").innerHTML = "You will receive an amount of " + (intrest) + ",";
-    document.getElementById("year").innerHTML = "in the year " + (2021 + parseInt(r));
+    document.getElementById("amount").innerHTML = "If you deposit ";
+    document.getElementById("rate2").innerHTML = "at an intrest rate of ";
+    document.getElementById("result").innerHTML = "You will receive an amount of ";
+    document.getElementById("year").innerHTML = "in the year ";
+    document.getElementById("amount2").innerHTML = p + ",";
+    document.getElementById("rate3").innerHTML = q + "%.";
+    document.getElementById("result2").innerHTML = (intrest) + ",";
+    document.getElementById("year2").innerHTML = (2021 + parseInt(r));
 }
 function showVal(val)
 {
